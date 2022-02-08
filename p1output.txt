@@ -1,1 +1,42 @@
 
+Breakpoint 1, main () at p1original.c:18
+18  {
+(gdb) n
+20    input(&base,&height);
+(gdb) s
+input (base=0x7fff648321fc, height=0x7fff64832200) at p1original.c:4
+4   printf("enter the value of base\n");
+(gdb) n
+enter the value of base
+5   scanf("%f",base);
+(gdb) n
+2
+6   printf("enter the value of height\n");
+(gdb) n
+enter the value of height
+7   scanf("%f",height);
+(gdb) n
+3
+8   }
+(gdb) n
+main () at p1original.c:21
+21    find_area(base,height,&area);
+(gdb) s
+find_area (base=2, height=3, area=0x7fff64832204) at p1original.c:11
+11  *area=base*height/2;
+(gdb) n
+12  }
+(gdb) n
+main () at p1original.c:22
+22    output(area);
+(gdb) s
+output (area=3) at p1original.c:15
+15  printf("the area of the triangle is %f",area);
+(gdb) n
+16  }
+(gdb) n
+main () at p1original.c:23
+23    return 0;
+(gdb) n
+24  }
+
