@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p4original.c": [
+      {
+        "id": "786bfc63-3460-4707-bb9d-5e9029e1e910",
+        "line": 2,
+        "version": 696,
+        "index": 18
+      },
+      {
+        "id": "377a367d-2f33-44b2-9691-92ab5fe31be8",
+        "line": 54,
+        "version": 696,
+        "index": 715
+      }
+    ]
+  }
+}
