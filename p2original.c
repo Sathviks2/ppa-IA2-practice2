@@ -20,7 +20,12 @@ int input_side()
   void output(int a,int b,int c,int result)
   {
     if(a!=b && b!=c &&c!=a)
-    printf("the triangle is scalene\n");
+   { printf("the triangle is scalene\n");}
+   else
+   {
+    printf("triangle is not scalene\n");
+   }
+
   }
   int main()
   {

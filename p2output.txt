@@ -1,1 +1,73 @@
-
+Breakpoint 1, main () at p2original.c:33
+33      a=input_side();
+(gdb) s
+input_side () at p2original.c:3
+3   {
+(gdb) n
+5     printf("enter the length sides of triangle\n");
+(gdb) n
+enter the length sides of triangle
+6     scanf("%d",&n);
+(gdb) n
+2
+7     return n;
+(gdb) n
+8   }
+(gdb) n
+main () at p2original.c:34
+34      b=input_side();
+(gdb) s
+input_side () at p2original.c:3
+3   {
+(gdb) n
+5     printf("enter the length sides of triangle\n");
+(gdb) n
+enter the length sides of triangle
+6     scanf("%d",&n);
+(gdb) n
+4
+7     return n;
+(gdb) n
+8   }
+(gdb) n
+main () at p2original.c:35
+35      c=input_side();
+(gdb) s
+input_side () at p2original.c:3
+3   {
+(gdb) n
+5     printf("enter the length sides of triangle\n");
+(gdb) n
+enter the length sides of triangle
+6     scanf("%d",&n);
+(gdb) n
+9
+7     return n;
+(gdb) n
+8   }
+(gdb) n
+main () at p2original.c:36
+36      x=check_scalene(a,b,c);
+(gdb) s
+check_scalene (a=2, b=4, c=9) at p2original.c:11
+11     if(a==b||b==c||c==a)
+(gdb) n
+17     return 0;
+(gdb) n
+19    }
+(gdb) n
+main () at p2original.c:37
+37      output(a,b,c,x);
+(gdb) s
+output (a=2, b=4, c=9, result=0) at p2original.c:22
+22      if(a!=b && b!=c &&c!=a)
+(gdb) s
+23     { printf("the triangle is scalene\n");}
+(gdb) n
+the triangle is scalene
+29    }
+(gdb) n
+main () at p2original.c:38
+38      return 0;
+(gdb) n
+39    }
